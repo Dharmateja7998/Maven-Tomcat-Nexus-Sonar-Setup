@@ -29,6 +29,9 @@ sudo tar xzf nexus-3.29.2-02-unix.tar.gz -C /opt/nexus --strip-components=1
 
 vi /opt/nexus/bin/nexus.rc
  run_as_user="root"
+
+vi /opt/nexus/bin/nexus.vmoptions
+ change ../sonatype-work/nexus3 to ./sonatype-work/nexus3
  
 sudo /opt/nexus/bin/nexus start
 
